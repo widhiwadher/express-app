@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-craft</title>
+
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+</head>
+
+<body>
+<h1 class="heading-cont mt-3">{{contactus}}</h1>    
+
+{{#if age >= 3 }}
+
+
+{{/if}}
+ {{#each persons as |value key| }}
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    </tr>
+ <tr>
+  <td>{{name}}</td>
+    <td>{{age}}</td>
+</tr>
+</table>
+
+{{/each}}
+
+  <hr>
+  <hr>
+
+{{#each address }}
+<p>{{this}}</p>
+{{/each}}
+
+
+{{!-- {{#each persons }}
+ 
+{{#each this.name}}
+<p>{{this}}</p>
+
+ {{/each}}
+{{/each}} --}}
+
+</body>
+
+</html>
